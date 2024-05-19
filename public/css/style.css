@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #222;
+  background-color: #efefef;
+  text-align: center;
+  line-height: 1.4em;
+  margin: 0;
+}
+
+main {
+  padding: 0;
+  margin-block: 40px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+.user-stories li {
+  margin-bottom: 1em;
+}
+
+a {
+  color: #2574a9;
+}
+
+form {
+  margin: 10px auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+label {
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+input {
+  padding: 5px;
+}
+
+input[type="text"] {
+  max-width: 220px;
+  width: 100%;
+  text-align: center;
+}
+
+legend {
+  font-weight: 700;
+}
+#submit {
+  background-color: green;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.requirements img {
+  width: 100%;
+  max-width: 600px;
+}
+
+fieldset {
+  padding-block: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
