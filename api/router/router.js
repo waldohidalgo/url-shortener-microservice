@@ -22,20 +22,23 @@ router.post("/api/shorturl", function (req, res) {
 
       try {
         const cantidadElementos = await URLModel.countDocuments({});
-        const urlFinded = await URLModel.findOne({ originalUrl: url.origin });
+        const urlFinded = await URLModel.findOne({ originalUrl: urlInput });
 
         if (urlFinded) {
-          res.json({ original_url: url.origin, short_url: urlFinded.shortUrl });
+          res.json({
+            original_url: urlFinded.originalUrl,
+            short_url: urlFinded.shortUrl,
+          });
         } else {
           const newURL = new URLModel({
-            originalUrl: url.origin,
+            originalUrl: urlInput,
             shortUrl: cantidadElementos + 1,
             fecha: new Date(),
           });
 
           await newURL.save();
           res.json({
-            original_url: url.origin,
+            original_url: urlInput,
             short_url: cantidadElementos + 1,
           });
         }
