@@ -7,7 +7,9 @@ body {
   line-height: 1.4em;
   margin: 0;
 }
-
+h1 {
+  text-decoration: underline;
+}
 main {
   padding: 0;
   margin-block: 40px;
@@ -67,4 +69,13 @@ fieldset {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+.code {
+  background-color: #fff;
+  width: fit-content;
+  margin-inline: auto;
+}
+#user-stories {
+  padding-block: 1rem;
+  background-color: #ffefaf;
 }
